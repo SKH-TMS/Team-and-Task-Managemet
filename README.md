@@ -32,8 +32,8 @@ The code of **ManageTasks** and **ManageTeam** is not written till now.
 - Added code of following routes in the **api/teamData** folder.
 
   1.  **assignTask/roue.ts**
-  2.  **assignTask/roue.ts**
-  3.  **assignTask/roue.ts**
+  2.  **getProjects/roue.ts**
+  3.  **getTeams/roue.ts**
 
 ### Incomplete Sections
 
