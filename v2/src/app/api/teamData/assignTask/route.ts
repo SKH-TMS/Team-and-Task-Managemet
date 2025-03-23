@@ -79,9 +79,20 @@ export async function POST(req: NextRequest) {
       const updateassignedProjectLog =
         await AssignedProjectLog.findOneAndUpdate(
           { AssignProjectId: assignedProjectLog.AssignProjectId },
-          { TaskIds: taskids },
+          { tasksIds: taskids },
           { new: true }
         );
+      if (!updateassignedProjectLog) {
+        Task.deleteOne({ TaskId: newTask.TaskId });
+        return NextResponse.json(
+          {
+            success: false,
+            message: "Failed to update the assigned project log.",
+          },
+          { status: 500 }
+        );
+      }
+
       return NextResponse.json({
         success: true,
         message: "Task assigned successfully!",
@@ -148,9 +159,20 @@ export async function POST(req: NextRequest) {
     taskids.push(newTask.TaskId);
     const updateassignedProjectLog = await AssignedProjectLog.findOneAndUpdate(
       { AssignProjectId: assignedProjectLog.AssignProjectId },
-      { TaskIds: taskids },
+      { tasksIds: taskids },
       { new: true }
     );
+    if (!updateassignedProjectLog) {
+      Task.deleteOne({ TaskId: newTask.TaskId });
+      return NextResponse.json(
+        {
+          success: false,
+          message: "Failed to update the assigned project log.",
+        },
+        { status: 500 }
+      );
+    }
+
     return NextResponse.json({
       success: true,
       message: "Task assigned successfully!",
