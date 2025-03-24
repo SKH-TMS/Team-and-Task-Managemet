@@ -119,7 +119,7 @@ export default function ManageTeam() {
     }
 
     try {
-      const response = await fetch("../../api/teamData/assignTask", {
+      const response = await fetch("/api/teamData/teamLeaderData/assignTask", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
