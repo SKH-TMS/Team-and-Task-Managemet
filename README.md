@@ -101,14 +101,15 @@ Added some missing functionalities of the "TeamLeader" and "TeamMembers"
 1. Validation is not done till now
 2. The code is also not development Ready
 
-#@ Version 5
+## Version 5
 
 ### Updation from last repo
 
 - Now the Team Leader can send the feedback if the task wast performed as per requirements
 - Did the backend validation and authentication of the pages.
 - Handeled error which was occuring during the Re assignmend of the task.
-
+### Working
+- For working of this version you need to run this project in new instance of terminal. i.e delete previous instence of terminal and create new one and run the code.
 ### Incomplete Section
 
 The code is still not production ready
