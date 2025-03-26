@@ -288,7 +288,7 @@ export default function ProjectTasksPage() {
                                   e.stopPropagation();
                                   handleViewExplanationClick(
                                     task,
-                                    "bg-yellow-300"
+                                    "bg-green-50"
                                   );
                                 }}
                                 className="text-blue-500 text-sm text-center underline hover hover:text-blue-700"
