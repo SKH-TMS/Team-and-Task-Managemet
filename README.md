@@ -111,5 +111,13 @@ Added some missing functionalities of the "TeamLeader" and "TeamMembers"
 - Code is also Production Ready.
 ### Working
 - For working of this version you need to run this project in new instance of terminal. i.e delete previous instence of terminal and create new one and run the code.
+## Version 6
+
+### Updation from last repo
+- Further made two more routes dynamic to get rid of strigify problem ("pointer to a pointer Problem").
+  1. projectManagerData\assignProject\[projectId].
+  2. teamData\teamLeaderData\assignTask\[projectId].
+### Working
+- For working of this version you need to run this project in new instance of terminal. i.e delete previous instence of terminal and create new one and run the code.
 
 
